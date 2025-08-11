@@ -290,7 +290,7 @@ export class NgGrid implements OnInit, DoCheck, OnDestroy {
           this._preferNew = val ? true : false;
           break;
         case "limit_to_screen":
-          this._limitToScreen = !this._autoResize && !!val;
+          this._limitToScreen = val ? true : false;
           break;
         case "center_to_screen":
           this._centerToScreen = val ? true : false;
